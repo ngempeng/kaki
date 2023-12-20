@@ -21,7 +21,7 @@ apt upgrade -y
 apt dist-upgrade -y
 apt install socat netfilter-persistent -y
 apt install vnstat lsof fail2ban -y
-apt install curl sudo -y
+apt install curl -y
 apt install screen cron screenfetch -y
 mkdir /backup >> /dev/null 2>&1
 mkdir /user >> /dev/null 2>&1
@@ -64,7 +64,7 @@ sleep 1
 cd
 clear
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
-sudo apt-get install speedtest
+apt install speedtest
 clear
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 apt install nginx -y
